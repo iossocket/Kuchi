@@ -9,8 +9,11 @@
 import SwiftUI
 
 final class UserManager: ObservableObject {
-    @Published var profile: Profile = Profile(name: "")
-    @Published var settings: Settings = Settings(rememberUser: false)
+    @Published
+    var profile: Profile = Profile(name: "")
+    
+    @Published
+    var settings: Settings = Settings(rememberUser: false)
     
     var isRegistered: Bool {
         return !profile.name.isEmpty
@@ -47,5 +50,9 @@ final class UserManager: ObservableObject {
     func clear() {
         UserDefaults.standard.removeObject(forKey: "user-profile")
         UserDefaults.standard.removeObject(forKey: "user-settings")
+    }
+    
+    func isUserNameValid(_ name: String) -> Bool {
+        return name.count >= 3
     }
 }

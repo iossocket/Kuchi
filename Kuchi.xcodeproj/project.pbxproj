@@ -23,6 +23,9 @@
 		504BFADF239BD33900FB8B9A /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504BFADE239BD33900FB8B9A /* Profile.swift */; };
 		504BFAE1239BD3B600FB8B9A /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504BFAE0239BD3B600FB8B9A /* Settings.swift */; };
 		504BFAE3239BD41000FB8B9A /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504BFAE2239BD41000FB8B9A /* UserManager.swift */; };
+		505F327423A4935B00F5AE1A /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 505F327323A4935B00F5AE1A /* DemoView.swift */; };
+		5065B16F23B6F3C00020E01B /* CongratulationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5065B16E23B6F3C00020E01B /* CongratulationView.swift */; };
+		50F40CCA23B703C200C9266E /* ChallengesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F40CC923B703C200C9266E /* ChallengesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		504BFADE239BD33900FB8B9A /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		504BFAE0239BD3B600FB8B9A /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		504BFAE2239BD41000FB8B9A /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		505F327323A4935B00F5AE1A /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
+		5065B16E23B6F3C00020E01B /* CongratulationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratulationView.swift; sourceTree = "<group>"; };
+		50F40CC923B703C200C9266E /* ChallengesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,11 +82,14 @@
 		504BFA8A2388E78400FB8B9A /* Kuchi */ = {
 			isa = PBXGroup;
 			children = (
+				50F40CC823B702D600C9266E /* Domain */,
 				504BFADD239BD32300FB8B9A /* Profile */,
 				504BFAD8239BB4E300FB8B9A /* Utils */,
 				504BFAD4239B9B3400FB8B9A /* Welcome */,
 				504BFA8B2388E78400FB8B9A /* AppDelegate.swift */,
+				505F327323A4935B00F5AE1A /* DemoView.swift */,
 				504BFA8D2388E78400FB8B9A /* SceneDelegate.swift */,
+				5065B16E23B6F3C00020E01B /* CongratulationView.swift */,
 				504BFA912388E78400FB8B9A /* Assets.xcassets */,
 				504BFA962388E78400FB8B9A /* LaunchScreen.storyboard */,
 				504BFA992388E78400FB8B9A /* Info.plist */,
@@ -132,9 +141,17 @@
 			children = (
 				504BFADE239BD33900FB8B9A /* Profile.swift */,
 				504BFAE0239BD3B600FB8B9A /* Settings.swift */,
-				504BFAE2239BD41000FB8B9A /* UserManager.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		50F40CC823B702D600C9266E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				504BFAE2239BD41000FB8B9A /* UserManager.swift */,
+				50F40CC923B703C200C9266E /* ChallengesViewModel.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,10 +226,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				504BFA8C2388E78400FB8B9A /* AppDelegate.swift in Sources */,
+				5065B16F23B6F3C00020E01B /* CongratulationView.swift in Sources */,
 				504BFAD7239BAAA400FB8B9A /* BorderedViewModifier.swift in Sources */,
 				504BFACB23891A3D00FB8B9A /* WelcomeView.swift in Sources */,
 				504BFAE3239BD41000FB8B9A /* UserManager.swift in Sources */,
 				504BFADA239BB4EC00FB8B9A /* KeyboardFollower.swift in Sources */,
+				50F40CCA23B703C200C9266E /* ChallengesViewModel.swift in Sources */,
 				504BFAD3239B8BF500FB8B9A /* WelcomeMessageView.swift in Sources */,
 				504BFAD1239B8B2400FB8B9A /* LogoImage.swift in Sources */,
 				504BFAE1239BD3B600FB8B9A /* Settings.swift in Sources */,
@@ -221,6 +240,7 @@
 				504BFADF239BD33900FB8B9A /* Profile.swift in Sources */,
 				504BFA8E2388E78400FB8B9A /* SceneDelegate.swift in Sources */,
 				504BFACF239B8A2800FB8B9A /* WelcomeBackgroundImage.swift in Sources */,
+				505F327423A4935B00F5AE1A /* DemoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

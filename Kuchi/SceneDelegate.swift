@@ -27,7 +27,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             userManager.load()
             
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: RegisterView(keyboardHandler: KeyboardFollower()).environmentObject(userManager))
+            window.rootViewController = UIHostingController(rootView: CongratulationView().environmentObject(userManager))
             self.window = window
             window.makeKeyAndVisible()
         }
